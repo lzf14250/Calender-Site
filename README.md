@@ -9,7 +9,7 @@ Calender with js and php
 
  User can choose the event to be a personal event or of a group when creating it.
 
- A new event is personal by default if no other member is added. Otherwise it automatically becomes a group event and require additional group name.
+ A new event is personal by default if no other members are added. Otherwise it automatically becomes a group event and require additional group name.
 
 ### Color indicator:
 
@@ -23,6 +23,9 @@ After login, days with personal and group events are indicated with different gr
 current test users:
  - username: cjh, password: cuijinhao
  - username: lzf, password: lzf
+
+## ps
+click the title of an event to mofify and delete this event
 
 ## references
  - time dropper widget originally from http://www.jq22.com/jquery-info7815, and modified for part of the function
