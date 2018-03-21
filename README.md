@@ -21,6 +21,7 @@ After login, days with personal and group events are indicated with different gr
 
 ## login
 current test users:
+
  - username: cjh, password: cuijinhao
  - username: lzf, password: lzf
 
