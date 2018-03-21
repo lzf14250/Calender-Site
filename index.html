@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="http://classes.engineering.wustl.edu/cse330/content/calendar.min.js"></script>
+    <script src="timedropper.js"></script>
+    <link rel="stylesheet" type="text/css" href="timedropper.css">
+    <script src="calender.js"></script>
+  </head>
+  <body>
+    <h1>JS Calender</h1>
+    <p class="head">
+      <button id="login">log in</button>
+      <button id="signup">sign up</button>
+      <button id="user" class="hidden">user</button>
+      <button id="logout" class="hidden">log out</button>
+    </p>
+    <p class="month-control">
+      <button id="prev_month">&lt;</button>
+      <b id="monthPointer"></b>
+      <b id="yearPointer"></b>
+      <button id="next_month">&gt;</button>
+    </p>
+    <table>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </table>
+    <div id="loginDialog" class="hiddenDialog">
+      <input type="text" name="username" placeholder="user name">
+      <input type="password" name="password" placeholder="password">
+    </div>
+    <div id="signupDialog" class="hiddenDialog">
+      <input type="text" name="username" placeholder="user name">
+      <input type="password" name="password1" placeholder="password">
+      <input type="password" name="password2" placeholder="password">
+    </div>
+    <div id="eventDialog" class="hiddenDialog">
+    </div>
+    <div id="eventAddDialog" class="hiddenDialog">
+    </div>
+    <div id="memberAddDialog" class="hiddenDialog">
+      <p>
+        <input id="newMember" name="username" type="text">
+        <button id="addMemberButton" class="modButton">add</button>
+      </p>
+    </div>
+    <div id="eventModifyDialog" class="hiddenDialog">
+      <input type="text" name="eventTitle" id="modTitle">
+      <textarea id="modDes" name="eventDes" rows="10" cols="45"></textarea>
+      <input type="text" id="modAlarm" />
+      <p class="eventOwner" id="modOwner"></p>
+      <p class="modButtonP">
+        <button id="modSubmit" class="modButton">submit</button>
+        <button id="modDelete" class="modButton">delete</button>
+      </p>
+    </div>
+  </body>
+</html>
